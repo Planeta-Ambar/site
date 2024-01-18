@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeta Ambar</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="scrollBody">
+
+    <!--Navbar-->
+    <header>
+        <nav class="menuNav fixed-top">
+            <div class="titleNav" href="#inicio">
+                <a href="./index.html">
+                    <img class="logo" src="img/outros/ativo_93.png" alt="Logo" width="50" height="50">
+                </a>
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a id="option1" href="">nada</a></li>
+                <li><a id="option2" href="">nada</a></li>
+                <li><a id="option3" href="">nada</a>
+                </li>
+                <li><a id="option4" href="#section-footer">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner - Video -->
+
+    <section id="home">
+        <div class="banner">
+            <div class="video video1">
+                <video src="./video/video.mp4" type="video/mp4" autoplay muted loop></video>
+            </div>
+            <div class="background">
+                <div class="video_e_logo">
+                    <div class="video">
+                        <video src="./video/video.mp4" type="video/mp4" autoplay muted loop></video>
+                    </div>
+                    <div class="logoAmbar">
+                        <img src="./img/outros/logo_ambar.png" alt="Logo Âmbar">
+                        <button><a href="https://discord.gg/sKAaRrzEuZ">Entrar no Servidor</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfis Dino -->
+
+    <section id="perfisDino">
+        <h2 class="title">
+            <i>
+                Conheça os perfis de
+            </i><br>
+            <span data-text="Carnívoros">
+                Carnívoros
+            </span>
+        </h2>
+        <div class="perfisDino">
+            <ul class="perfis">
+                <li>
+                    <img src="./img/outros/img1.png" alt="Perfis Carnívoros"
+                        onclick="imgSlider('img/img1.png'); changeCircleColor('#017143')">
+                </li>
+                <li>
+                    <img src="./img/outros/img2.png" alt="Perfis Herbívoros"
+                        onclick="imgSlider('img/img2.png'); changeCircleColor('#eb7495')">
+                </li>
+                <li>
+                    <img src="./img/outros/img3.png" alt="Aquáticos"
+                        onclick="imgSlider('img/img3.png'); changeCircleColor('#b6208b')">
+                </li>
+            </ul>
+
+            <div id="content">
+                <div id="imgBox">
+                    <div class="circle"></div>
+                    <img src="./img/png/carnivoros/1_Carcha.png" alt="CARCHARODONTOSAURUS">
+                </div>
+                <div id="textBox">
+                    <h2 class="dino">CARCHARODONTOSAURUS</h2>
+                    <div id="grupo">
+                        <h2 class="grupo">GRUPO: <br><br> <span>2</span>ADULTOS <br><span>2</span>ADOLESCENTES <br><span>4</span>JUVENIS <br><span>4</span>TOTAL/GRUPO</h2>
+                    </div>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshot -->
+
+    <section id="screenshots">
+        <div class="screenshots">
+            <div class="backgroundS">
+                <div class="scrst">
+                    <img class="icon" src="./img/outros/icon.png" alt="Icon">
+                    <h2>SCREENSHOTS</h2>
+                    <img class="icon" src="./img/outros/icon2.png" alt="Icon">
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div id="rex" class="swiper-slide ">
+                            <img src="./img/screenshots/rex.png" />
+                        </div>
+                        <div id="yuti" class="swiper-slide ">
+                            <img src="./img/screenshots/yuti.png" />
+                        </div>
+                        <div id="yuti_2" class="swiper-slide ">
+                            <img src="./img/screenshots/yuti_2.png" />
+                        </div>
+                        <div id="anodonto_didi" class="swiper-slide ">
+                            <img src="./img/screenshots/anodonto_didi.png" />
+                        </div>
+                        <div id="dilo_didi" class="swiper-slide ">
+                            <img src="./img/screenshots/dilo_didi.png" />
+                        </div>
+                        <div id="pachy_didi" class="swiper-slide ">
+                            <img src="./img/screenshots/pachy_didi.png" />
+                        </div>
+                        <div id="quetz" class="swiper-slide ">
+                            <img src="./img/screenshots/quetz.png" />
+                        </div>
+                        <div id="quetz_2" class="swiper-slide ">
+                            <img src="./img/screenshots/quetz_2.png" />
+                        </div>
+                        <div id="thumbnail" class="swiper-slide ">
+                            <img src="./img/screenshots/thumbnail.png" />
+                        </div>
+                        <div id="trike" class="swiper-slide ">
+                            <img src="./img/screenshots/trike.png" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="section-footer">
+        <footer id="footer">
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <img class="logo_ambar" src="./img/logo_ambar_preto_e_braco.png" alt="Logo Planeta Âmbar">
+
+                    <div id="footer_social">
+                        <a href="https://www.youtube.com/channel/UCbmhCNnZTHoQOLBVPeYemLw" class="footer_link_social"
+                            id="youtube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/planeta_ambar_brasil/" class="footer_link_social"
+                            id="instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@planetaambarbrasil" class="footer_link_social" id="tiktok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="https://discord.gg/sKAaRrzEuZ" class="footer_link_social" id="discord">
+                            <i class="bi bi-discord"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Mapa</h3>
+                    </li>
+                    <li>
+                        <a href="#home" class="footer-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#sobre" class="footer-link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#screenshots" class="footer-link">Screenshot</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="footer_copyright">
+                &#169
+                2024 Planeta Âmbar
+            </div>
+        </footer>
+    </section>
+
+    <!-- Initialize Swiper -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+    <script src="./js/mobile-navbar.js"></script>
+    <script src="./js/backgroundS.js"></script>
+</body>
+
+</html>
