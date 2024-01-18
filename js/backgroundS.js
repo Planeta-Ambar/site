@@ -16,6 +16,7 @@ const img = [rex, yuti, yuti_2, anodonto_didi, dilo_didi, pachy_didi, quetz, que
 function ContarSegundos() {
     for (let i = 0; i < 10; i++) {
         if (img[i].style.zIndex == "1") {
+            //testando
             screenshots.style.backgroundImage = `url("./img/screenshots/${imgs[i]}.png")`;
 
             console.log("Entrou aqui!")
